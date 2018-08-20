@@ -37,7 +37,13 @@ app.get('/', (req, res) => {
     // res.send('<h1>Hello World</h1>')
     res.render('home.hbs', {
         pageTitle: 'Home Page',
-        welcomeMessage: 'Welcome to the most awesome website ever',
+        welcomeMessage: 'Welcome to the most awesome website ever'
+    })
+})
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page'
     })
 })
 
